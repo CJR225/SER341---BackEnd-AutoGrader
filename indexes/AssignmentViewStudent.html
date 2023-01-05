@@ -1,0 +1,151 @@
+<!-- Assignment View HTML - Student
+ BY: Christopher Rocco - Quinnipiac 2022
+SER 341 / 341 Full-Stack
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <link rel="stylesheet" href="../css/style-course-view.css" />
+
+  <title id="assignTitle">Assignment #1 - CSC215</title>
+</head>
+
+<body>
+
+  <!--Side Bar Navigation-->
+
+  <div id="menu">
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="menu-inner">
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="../indexes/SignIn.html">Logout</a>
+        </li>
+        <li class="menu-item">
+          <a href="../indexes/course_home_student.html">Home</a>
+        </li>
+        <li class="menu-item">
+          <a href="../indexes/courses-view-student.html">Courses</a>
+        </li>
+      </ul>
+    </div>
+    <svg version="1.1" id="blob" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z" />
+    </svg>
+  </div>
+
+
+  <!--Header-->
+
+  <header>
+    <div class="container-fluid pt-4 pb-3">
+      <div class="row-cols-auto">
+        <div class="col">
+          <h3>CSC 215 - Algorthim Design and Analysis</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--Assignment Text-->
+
+  <main>
+    <div class="container-fluid pt-5">
+      <h4>Assignment #1: Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+      <div class="row mt-4">
+        <div class="col-9 p-3" id="assignments">
+          <div>
+            <text class="fw-bold">Assignment 1: Lorem ipsum dolor sit amet consectetur adipisicing elit.</text>
+            <text class="fw-semibold" style="color: red;">(Due 12/20/22 By 11:59 pm)</text>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus nostrum laboriosam
+            tenetur nihil similique maxime eligendi, dolore animi fugiat incidunt veniam quaerat hic sint maiores nobis
+            rem sunt consequuntur!</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam voluptas aspernatur omnis similique.
+            Hic totam illo amet cum velit odio illum commodi nostrum exercitationem quae. Excepturi dolore quis in esse.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsam, similique commodi aperiam quos odio
+            ipsum blanditiis nihil distinctio veritatis quo error enim necessitatibus cum laboriosam labore sequi
+            cumque? Cumque?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis pariatur iusto tempore quae consequatur
+            saepe dolorem libero quia repellendus? Id mollitia sunt repellendus veniam quas perferendis totam provident
+            sapiente nam.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem soluta quasi illum pariatur culpa fuga
+            perspiciatis temporibus blanditiis doloremque reiciendis dignissimos laboriosam, quis rem qui fugiat enim,
+            officiis harum corrupti.
+          </p>
+        </div>
+
+        <!--Grade Attempts Column-->
+
+        <div class="col-3 p-3 " id="grades">
+          <text class="fw-bold"><u>Submission Grade:</u><br><span style="color:red;"> 2 Attempts Remaining</span></text>
+          <p class="pt-2">
+            Attempt #1: 6/10
+            <br>
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+
+        <!--Text Editor-->
+
+        <div class="col-9">
+          <h5>Discussion Box</h5>
+          <div class="form-group">
+            <textarea id="editor"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mt-3" id="submitAssignStudent">Submit</button>
+        </div>
+
+        <!--Upload File Form-->
+
+        <div class="col-3">
+          <!-- Standar Form -->
+          <h5>Select files from your computer</h5>
+          <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+            <div class="form-inline">
+              <div class="form-group">
+                <input style="color: white;" type="file" name="files[]" id="js-upload-files" multiple>
+          </form>
+          <!-- Drop Zone -->
+          <div class="upload-drop-zone mt-2" id="drop-zone">
+            Just drag and drop files here
+          </div>
+          <!-- Upload Finished -->
+          <div class="js-upload-finished">
+            <h5>Processed files</h5>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-success rounded-1">assignment1.java</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+</body>
+<script src="../js/main.js"></script>
+
+</html>

@@ -1,0 +1,131 @@
+<!-- Sign Up HTML
+ BY: Christopher Rocco - Quinnipiac 2022
+SER 341 / 341 Full-Stack
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/SignInSignUpStyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <title>AutoGrader - Sign Up</title>
+</head>
+
+<body>
+
+  <!--Floating Background Particles-->
+
+  <div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!--Main Card-->
+
+    <main class="pt-5">
+
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card  text-white" style="border-radius: 1rem;">
+              <div class="card-body p-5 pb-3 text-center">
+
+                <div class="mb-md-2 mt-md-2">
+
+                  <h2 class="fw-bold mb-2 pb-2">Welcome to Auto Grader</h2>
+
+                  <p class="pb-4">Please fill in the following to Sign Up!</p>
+
+                  <div class="form-outline form-white mb-4">
+                    <div class="input">
+                      <input type="username" id="typeUsername" class="form-control form-control-lg"
+                        placeholder="Username" />
+                      <label class="form-label pt-2" for="typeUsername">Username</label>
+                    </div>
+
+                    <div class="form-outline form-white ">
+                      <input type="email" id="typeEmail" class="form-control form-control-lg" placeholder="Email" />
+                      <label class="form-label pt-2" for="typeEmail">Email</label>
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <input type="password" id="typePassword" class="form-control form-control-lg"
+                        placeholder="Password" />
+                      <label class="form-label pt-2" for="typePassword">Password</label>
+                    </div>
+
+                    <div class="optionbox mb-5 rounded" name="users">
+
+                      <select id="options">
+                        <option value="selectUser"> Please select </option>
+                        <option value="student">Student</option>
+                        <option value="professor">Professor</option>
+                      </select>
+
+                    </div>
+                    <div>
+                      <button class="btn btn-outline-light btn-lg px-5" type="submit" onclick="sub()">Sign Up</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <!--Footer Credit-->
+
+    <footer>
+      <div class="text-center fixed-bottom pb-3">
+        Chris Rocco - Emily Balboni - Amber Kusma
+        <br>
+        &copy; Quinnipiac 2022
+      </div>
+    </footer>
+
+  </div>
+</body>
+<script src="../js/main.js"></script>
+
+</html>

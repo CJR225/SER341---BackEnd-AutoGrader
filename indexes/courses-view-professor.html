@@ -1,0 +1,172 @@
+<!-- Course view HTML - Professor
+ BY: Christopher Rocco - Quinnipiac 2022
+SER 341 / 341 Full-Stack
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="../css/style-course-view.css" />
+
+  <title>AutoGrader - Courses [Instructor]</title>
+</head>
+
+<body>
+
+  <!--Side Bar Nav-->
+
+  <div id="menu">
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="menu-inner">
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="../indexes/SignIn.html">Logout</a>
+        </li>
+        <li class="menu-item">
+          <a href="../indexes/student-roster-screen.html">Roster</a>
+        </li>
+        <li class="menu-item">
+          <a data-bs-toggle="modal" data-bs-target="#addcourseModal" href="#">Add Course</a>
+        </li>
+      </ul>
+    </div>
+    <svg version="1.1" id="blob" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z" />
+    </svg>
+  </div>
+
+
+  <!--Header-->
+
+  <header>
+    <div class="container-fluid pt-4 pb-3">
+      <div class="row-cols-auto">
+        <div class="col">
+          <h3 class="">Courses - Instructor View</h3>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!--Search Bar-->
+
+  <main>
+    <div class="container-fluid mb-5 mt-5">
+      <div class="row-cols-auto">
+        <div class="col-3">
+          <div class="input-group rounded-0">
+            <span class="input-group-text rounded-0" id="search-addon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+            </span>
+            <input type="search" class="form-control rounded-0" placeholder="Search your courses" aria-label="Search"
+              aria-describedby="search-addon" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--Course Card views-->
+
+  <div class="album">
+    <div class="container-fluid">
+      <div class="row g-5">
+        <div class="col-6">
+          <div class="card shadow-lg">
+            <svg class="bd-placeholder-img card-img-top" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><img
+                src="../img/SER340img.png" height="200px" alt="Computer background"></svg>
+            <div class="card-body ">
+              <p class="card-text fw-bold fs-5"><strong>SER340</strong><br>Full Stack Dev1:Software Req</p>
+              <text>Ruby ElKharboutly</text>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card shadow-lg">
+            <svg class="bd-placeholder-img card-img-top " width="100%" height="0" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><img
+                src="../img/CSC215img.jpeg" height="200px" alt="Computer background"></svg>
+            <div class="card-body ">
+              <p class="card-text fw-bold fs-5"><strong>CSC215</strong><br>Algorithm Design and Analysis</p>
+              <text>Christian Duncan</text>
+              <a href="../indexes/course_home_professor.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card shadow-lg">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><img
+                src="../img/cloudcomputingimg.jpeg" height="200px" alt="Computer background"></svg>
+            <div class="card-body ">
+              <p class="card-text fw-bold fs-5"><strong>CSC375</strong><br>Cloud Computing</p>
+              <text>Dylan Nicolini</text>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Create Course Modal-->
+
+  <div class="modal fade" id="addcourseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h5 class="modal-title" id="courseModalLabel"><strong>Create Course</strong></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="createInputId" class="form-label"><strong>Create Course Id</strong></label>
+              <input type="number" class="form-control" placeholder="Please enter a Id number"
+                aria-label="createCourseID" aria-describedby="addon-wrapping">
+            </div>
+            <div class="mb-3">
+              <label for="createInputTitle" class="form-label"><strong>Create Course Title</strong></label>
+              <input type="text" class="form-control" placeholder="Please enter a Course Title"
+                aria-label="createCourseTitle" aria-describedby="addon-wrapping">
+            </div>
+            <div class="mb-3">
+              <label for="InputId" class="form-label"><strong>Course Instructor Name</strong></label>
+              <input type="text" class="form-control" placeholder="Please input Instructor Name"
+                aria-label="CourseInstructorName" aria-describedby="addon-wrapping">
+            </div>
+            <button type="submit" class="btn" id="modalButton">Create Course</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../js/main.js"></script>
+
+</html>

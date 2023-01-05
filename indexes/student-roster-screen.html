@@ -1,0 +1,121 @@
+<!-- student Roster HTML - Professor
+ BY: Christopher Rocco - Quinnipiac 2022
+SER 341 / 341 Full-Stack
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <link rel="stylesheet" href="../css/style-course-view.css" />
+
+  <title>AutoGrader - Student Roster</title>
+</head>
+
+<body>
+
+  <!--Side Bar Navigation-->
+
+  <div id="menu">
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="menu-inner">
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="../indexes/SignIn.html">Logout</a>
+        </li>
+        <li class="menu-item">
+          <a href="../indexes/courses-view-professor.html">Courses</a>
+        </li>
+      </ul>
+    </div>
+    <svg version="1.1" id="blob" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z" />
+    </svg>
+  </div>
+
+
+  <!--Header-->
+
+  <header>
+    <div class="container-fluid pt-4 pb-3">
+      <div class="row-cols-auto">
+        <div class="col">
+          <h3>Student Roster</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--Roster Row-->
+
+  <main>
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-4 mt-5 p-3" id="studentNames">
+        <text class="fw-bold">Student Name:</text>
+        <ul id="students" style="color: black; padding: 15px;">
+            <li class="roster-student">
+                Chris Rocco
+            </li>
+            <li class="roster-student">
+                Emily Balbony
+            </li>
+            <li class="roster-student">
+                Amber Kusma
+            </li>
+          </ul>
+        </div>
+        <div class="col-4 mt-5 p-3" id="rosterCourse">
+            <text class="fw-bold">Course Name:</text>
+            <ul id="courseName" style="color: black; padding: 15px;">
+                <li class="roster-course">
+                    CSC215
+                </li>
+                <li class="roster-course">
+                    CSC215
+                </li>
+                <li class="roster-course">
+                    CSC215
+                </li>
+              </ul>
+        </div>
+        <div class="col-4 mt-5 p-3" id="finalGrade">
+            <text class="fw-bold">Estimated Final Grade:</text>
+            <ul id="overallGrade" style="color: white; padding: 15px;">
+                <li class="roster-grade">
+                    A 
+                </li>
+                <li class="roster-grade">
+                    A 
+                </li>
+                <li class="roster-grade">
+                    A 
+                </li>
+              </ul>
+        </div>
+    </div>
+    </div>
+  </main>
+  
+</body>
+<script src="../js/main.js"></script>
+
+</html>
